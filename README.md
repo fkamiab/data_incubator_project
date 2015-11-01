@@ -8,6 +8,7 @@ For the current proposal, I focus on the case of "vehicles". I would like to sho
 
 ## The Data
 
+The data I will be using for my preliminary exploratory analysis can be found [here](https://uofi.app.box.com/NYCtaxidata). It has been originally obtained by [Dan Work](https://publish.illinois.edu/dbwork/open-data/) from the [New York City Taxi and Limousine Comission](http://www.nyc.gov/html/tlc/html/home/home.shtml).
 
 
 # Taxi GPS Coordinates
