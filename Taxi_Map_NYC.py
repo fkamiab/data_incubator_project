@@ -8,10 +8,21 @@ import pygmaps #One needs to install pygmaps to run this code
 
 number_rows=14863778 #This is the total number of rows in the file  
 
+READ_ALL_DATA = 0 #SET THIS TO 1 IF YOU LIKE ALL DATA TO BE WRITTEN OR TO 0 FOR A SMALLER SAMPLE OF DATA
+
 
 # READING DATA
-#Location of the file should be changed accordingly as the data file is too large to be uploaded on the Github repository  
-df=pd.read_csv('./trip_data_1_2010.csv', nrows=number_rows, usecols=[' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']) 
+#Location of the file should be changed accordingly, as the data file is too large to be uploaded on the Github repository 
+
+if (READ_ALL_DATA==1): 
+    #TAKES ALL OF DATA
+    df=pd.read_csv('./trip_data_1_2010.csv', nrows=number_rows, usecols=[' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']) 
+else:
+    #IF NOT, TAKES A SAMPLE OF RANDOM ROWS FROM THE FIRST 'number_rows' ROWS OF DATA
+    number_rows=1000
+    df_initial=pd.read_csv('./trip_data_1_2010.csv', nrows=number_rows)
+    rows = np.random.choice(df_initial.index.values, 10)
+    df = df_initial.ix[rows]
 #########################################################################
 
 
@@ -35,5 +46,5 @@ for i in rows:
 
 
 # PRINTING OUTPUT
-pickup_map.draw('./pickup_map.html')
-dropoff_map.draw('./dropoff_map.html')
+#pickup_map.draw('./pickup_map.html')
+#dropoff_map.draw('./dropoff_map.html')
