@@ -9,15 +9,15 @@ df_month=pd.read_table('./Travel_Duration_Month.out')
 pl.rcParams.update({'font.size':15})
 
 pd.DataFrame.hist(df_day, column="Hour in the Day", bins=24)
-pl.savefig('Histogram_Hour.pdf', bbox_inches='tight')
+pl.savefig('Histogram_Hour.png', bbox_inches='tight')
 #pl.show()
 pd.DataFrame.hist(df_day, column="Duration Time (min)", bins=12)
-pl.savefig('Histogram_Dur.pdf', bbox_inches='tight')
+pl.savefig('Histogram_Dur.png', bbox_inches='tight')
 
 #pl.show()
 
 pd.DataFrame.hist(df_month, column="Day of the Month", bins=31)
-pl.savefig('Histogram_Day.pdf', bbox_inches='tight')
+pl.savefig('Histogram_Day.png', bbox_inches='tight')
 
 #pl.show()
 
