@@ -8,7 +8,7 @@ import pygmaps #One needs to install pygmaps to run this code
 
 number_rows=14863778 #This is the total number of rows in the file  
 
-READ_ALL_DATA = 0 #SET THIS TO 1 IF YOU LIKE ALL DATA TO BE WRITTEN OR TO 0 FOR A SMALLER SAMPLE OF DATA
+READ_ALL_DATA = 0 #SET THIS TO 1 IF YOU LIKE ALL DATA TO BE READ OR TO 0 FOR A SMALLER SAMPLE OF DATA FOR A FASTER RUN --> this code was run for a random sample of 10000 rows from the data as the purpose was map illustration.
 
 
 # READING DATA
