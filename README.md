@@ -11,14 +11,17 @@ For the current proposal, I focus on the case of "vehicles". I would like to sho
 The data I will be using for my preliminary exploratory analysis can be found [here](https://uofi.app.box.com/NYCtaxidata). It has been originally obtained by [Dan Work](https://publish.illinois.edu/dbwork/open-data/) from the [New York City Taxi and Limousine Comission](http://www.nyc.gov/html/tlc/html/home/home.shtml). The raw data contains information on about 700 million taxi trips and takes up about 116GB in text CSV format. Due to the large size of the data, it is not present in this respository. Therefore, to run the programs presented here, you need to download the CVS tables, name them appropiately and put them in this directory with the rest of the files.
 
 
-# Taxi GPS Coordinates
+## Taxi GPS Coordinates
 
-The first step, in order to show how taxi 
-[link to taxi](\Taxi_Map_NYC.py)
+The first question to ask is whether the data is useful, for example in order to predict the time it takes to go from point A to point B in Manhattan. In other words, it is important to ask whether the data covers the GPS coordinates we are intersted in. I wrote a Python code which is [here](\Taxi_Map_NYC.py) in this repsoitory that reads the data and plots the GPS coordinates of the taxi pick-up and drop-off locations for a sub-sample of the data on top of [Google Maps](https://maps.google.ca/). The code uses [Pygmaps](https://code.google.com/p/pygmaps/), a Python wrapper for Google Maps JavaScript API V3. Pygmaps provides functions to generate HTML file which shows your GPS data on Google map. 
 
-http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/pickup_map.html
+The outputs of the code are two html files called [pickup_map.html](http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/pickup_map.html) and [dropoff_map.html](http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/dropoff_map.html), which take time to load as each contain 10000 points plotted on top of Google maps. If you would like less points, you can change [the code](\Taxi_Map_NYC.py) based on the comments in it.
 
-http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/dropoff_map.html
+I have also made a [PNG file](https://raw.githubusercontent.com/fkamiab/data_incubator_project/master/GPS_MAP.png) of reduced size which can be downloaded faster. As can be seen, each pick-up and drop-off locations give a trajectory for which travel time is shown in data. Therefore, if one knows the trajectories each user take on a regular basis, they can be compared to the ones in the data (the extrapolated results in time) to give future time predictions for the time spent by the user in their vehicle.
+
+## Histograms for One Sample Trajectory
+
+
 
 .. image:: /Histogram_Hour.png
 
