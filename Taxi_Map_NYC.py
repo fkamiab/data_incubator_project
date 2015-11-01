@@ -46,5 +46,5 @@ for i in rows:
 
 
 # PRINTING OUTPUT
-#pickup_map.draw('./pickup_map.html')
-#dropoff_map.draw('./dropoff_map.html')
+pickup_map.draw('./pickup_map.html')
+dropoff_map.draw('./dropoff_map.html')
