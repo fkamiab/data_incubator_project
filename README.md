@@ -17,7 +17,7 @@ The first question to ask is whether the data is useful, for example in order to
 
 The outputs of the code are two html files called [pickup_map.html](http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/pickup_map.html) and [dropoff_map.html](http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/dropoff_map.html), which take time to load as each contain 10000 points plotted on top of Google maps. I have also made a [PNG file](https://raw.githubusercontent.com/fkamiab/data_incubator_project/master/GPS_MAP.png) of reduced size which can be downloaded faster. As can be seen, each pick-up and drop-off locations give a trajectory for which travel time is shown in data. Therefore, if one knows the trajectories each user take on a regular basis, they can be compared to the ones in the data (the extrapolated results in time) to give future time predictions for the time spent by the user in their vehicle.
 
-## Histograms for One sSmple Trajectory
+## Histograms for One Sample Trajectory
 
 
 
