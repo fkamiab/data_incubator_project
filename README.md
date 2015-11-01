@@ -30,4 +30,3 @@ Now, we ask, how this can help in inferring statistical information on the traje
 
 
 
-http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/mymap.html
