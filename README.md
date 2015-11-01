@@ -16,6 +16,8 @@ The data I will be using for my preliminary exploratory analysis can be found [h
 The first step, in order to show how taxi 
 [link to taxi](\Taxi_Map_NYC.py)
 
+
+.. image:: \GPS_MAP.png
 http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/pickup_map.html
 
 http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/dropoff_map.html
