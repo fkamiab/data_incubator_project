@@ -4,5 +4,4 @@ A proposal for an app that aims to rank different transportation methods based o
 
 .. image:: /Histogram_Hour.png
 
-/mymap.html
-
+[Visit GitHub!](https://www.github.com)
