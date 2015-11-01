@@ -27,6 +27,6 @@ Now, we ask, how this can help in inferring statistical information on the traje
 
 
 
-
-
+## A Correlation
+Finally I wrote [a code](https://github.com/fkamiab/data_incubator_project/blob/master/correlation.py) that reads the data and plots distance travelled by the Taxis versus time of travel. [This plot](https://raw.githubusercontent.com/fkamiab/data_incubator_project/master/Correlation.png) shows an expected correlation between these two quantities. Outlier points were removed from data for making plot and a linear regression has been made to fit a line to the data whch can itself be predictive of travel time based on distance of the trajectory.
 
