@@ -15,7 +15,7 @@ The data I will be using for my preliminary exploratory analysis can be found [h
 
 The first question to ask is whether the data is useful, for example in order to predict the time it takes to go from point A to point B in Manhattan. In other words, it is important to ask whether the data covers the GPS coordinates we are intersted in. I wrote a Python code which is [here](\Taxi_Map_NYC.py) in this repsoitory that reads the data and plots the GPS coordinates of the taxi pick-up and drop-off locations for a sub-sample of the data on top of [Google Maps](https://maps.google.ca/). The code uses [Pygmaps](https://code.google.com/p/pygmaps/), a Python wrapper for Google Maps JavaScript API V3. Pygmaps provides functions to generate HTML file which shows your GPS data on Google map. 
 
-The outputs of the code are two html files called [pickup_map.html](\pickup_map.html) and [dropoff_map.html](\dropoff_map.html), which take time to load as each contain 10000 points plotted on top of Google maps.
+The outputs of the code are two html files called [pickup_map.html](http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/pickup_map.html) and [dropoff_map.html](http://htmlpreview.github.io/?https://github.com/fkamiab/data_incubator_project/blob/master/dropoff_map.html), which take time to load as each contain 10000 points plotted on top of Google maps.
 
 You can see the GPS MAP it [here](https://raw.githubusercontent.com/fkamiab/data_incubator_project/master/GPS_MAP.png).
 
